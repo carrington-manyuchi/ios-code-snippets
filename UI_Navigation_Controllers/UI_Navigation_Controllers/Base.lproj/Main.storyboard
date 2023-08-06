@@ -104,8 +104,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-Xe-57e">
                                 <rect key="frame" x="25" y="199" width="343" height="199"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To navigate from Root VC to this second we have used a simple Show Segue. No need to write any code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-p0-ZU7">
-                                        <rect key="frame" x="34.333333333333343" y="20" width="273.66666666666663" height="133"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To navigate from Root VC to this SecondVC we have used a simple Show Segue. No need to write any code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef3-p0-ZU7">
+                                        <rect key="frame" x="24.666666666666657" y="20" width="283.33333333333337" height="133"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="1qs-C9-hvu"/>
                                         </constraints>
@@ -171,8 +171,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pmf-cs-EYw">
                                 <rect key="frame" x="25" y="155" width="343" height="199"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To navigate from Root VC to this second we have used a simple Show Segue. No need to write any code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-JC-DnD">
-                                        <rect key="frame" x="34.333333333333343" y="20" width="273.66666666666663" height="133"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To navigate from Second VC to this ThirdVC we have used a Storyboard ID.  The code will be in SecondVC IBAction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-JC-DnD">
+                                        <rect key="frame" x="21.333333333333343" y="20" width="286.66666666666663" height="133"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="0UN-dm-fXG"/>
                                         </constraints>
@@ -203,6 +203,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="navigateToFourthVC:" destination="rl5-1p-DyM" eventType="touchUpInside" id="goj-li-Xdd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hq3-Mj-3uY"/>
@@ -219,6 +222,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SecondVC" id="NB2-ai-lQb"/>
+                    <connections>
+                        <segue destination="EJm-ds-4dy" kind="show" identifier="fourthVC" id="hHG-Ai-s1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0i-s1-LvY" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,17 +235,18 @@
             <objects>
                 <viewController storyboardIdentifier="FourthVC" id="EJm-ds-4dy" customClass="FourthVC" customModule="UI_Navigation_Controllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eub-vc-XUr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uM-dc-d5E">
-                                <rect key="frame" x="25" y="155" width="343" height="199"/>
+                                <rect key="frame" x="25" y="96" width="343" height="194"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To navigate from Root VC to this second we have used a simple Show Segue. No need to write any code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQm-Kx-4Rd">
-                                        <rect key="frame" x="34.333333333333343" y="20" width="273.66666666666663" height="133"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQm-Kx-4Rd">
+                                        <rect key="frame" x="27.666666666666657" y="20" width="280.33333333333337" height="164"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="133" id="oiv-Lk-F1V"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="133" id="oiv-Lk-F1V"/>
                                         </constraints>
+                                        <string key="text">To navigate from Third VC to this Fourth we have used a Show Segue. The difference is we have bind from one screen to the next and use perform segue in our IBAction.</string>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -249,18 +256,18 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="WQm-Kx-4Rd" secondAttribute="trailing" constant="35" id="PVE-T4-k6h"/>
                                     <constraint firstItem="WQm-Kx-4Rd" firstAttribute="top" secondItem="4uM-dc-d5E" secondAttribute="top" constant="20" id="WJv-fH-nXz"/>
-                                    <constraint firstAttribute="bottom" secondItem="WQm-Kx-4Rd" secondAttribute="bottom" constant="46" id="aIa-vP-dkS"/>
+                                    <constraint firstAttribute="bottom" secondItem="WQm-Kx-4Rd" secondAttribute="bottom" constant="10" id="aIa-vP-dkS"/>
                                     <constraint firstItem="WQm-Kx-4Rd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4uM-dc-d5E" secondAttribute="leading" constant="20" symbolic="YES" id="wIc-EB-dHq"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fourth VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYA-6R-s3I">
-                                <rect key="frame" x="144" y="74" width="105" height="31"/>
+                                <rect key="frame" x="144" y="15" width="105" height="31"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj9-OF-ERT">
-                                <rect key="frame" x="86.666666666666686" y="404" width="220" height="60"/>
+                                <rect key="frame" x="86.666666666666686" y="320" width="220" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="4sQ-dC-zuO"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="NL3-Nv-umU"/>
@@ -278,7 +285,7 @@
                             <constraint firstItem="4uM-dc-d5E" firstAttribute="top" secondItem="zYA-6R-s3I" secondAttribute="bottom" constant="50" id="KBA-a8-ZtM"/>
                             <constraint firstItem="4uM-dc-d5E" firstAttribute="leading" secondItem="yWZ-y1-Hd4" secondAttribute="leading" constant="25" id="cYi-9G-eC8"/>
                             <constraint firstItem="zYA-6R-s3I" firstAttribute="centerX" secondItem="eub-vc-XUr" secondAttribute="centerX" id="nAF-DO-xfI"/>
-                            <constraint firstItem="sj9-OF-ERT" firstAttribute="top" secondItem="4uM-dc-d5E" secondAttribute="bottom" constant="50" id="qUs-vm-Bh9"/>
+                            <constraint firstItem="sj9-OF-ERT" firstAttribute="top" secondItem="4uM-dc-d5E" secondAttribute="bottom" constant="30" id="qUs-vm-Bh9"/>
                             <constraint firstItem="yWZ-y1-Hd4" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sj9-OF-ERT" secondAttribute="bottom" constant="10" id="xul-gL-sj5"/>
                         </constraints>
                     </view>
@@ -286,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvt-X4-agB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3234" y="-2"/>
+            <point key="canvasLocation" x="3284.7328244274809" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
