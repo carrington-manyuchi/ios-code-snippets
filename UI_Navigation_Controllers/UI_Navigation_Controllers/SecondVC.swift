@@ -14,6 +14,7 @@ class SecondVC: UIViewController {
     
     @IBAction func navigateToThirdVC(_ sender: UIButton) {
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ThirdVC") as? ThirdVC else { return }
+     
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

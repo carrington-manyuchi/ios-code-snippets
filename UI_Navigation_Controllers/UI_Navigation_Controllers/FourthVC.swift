@@ -12,4 +12,11 @@ class FourthVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func navigateToFifthVC(_ sender: UIButton) {
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "FifthVC") as? FifthVC else { return }
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
 }
