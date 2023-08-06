@@ -4,3 +4,6 @@
 [submodule "labels"]
 	path = labels
 	url = https://github.com/carrington-manyuchi/Labels-UIKit.git
+[submodule "StoryboardNavigations"]
+	path = StoryboardNavigations
+	url = https://github.com/carrington-manyuchi/Navigations.git
