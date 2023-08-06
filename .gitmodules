@@ -1,3 +1,6 @@
 [submodule "Animations2"]
 	path = Animations2
 	url = https://github.com/carrington-manyuchi/Animations.git
+[submodule "labels"]
+	path = labels
+	url = https://github.com/carrington-manyuchi/Labels-UIKit.git
