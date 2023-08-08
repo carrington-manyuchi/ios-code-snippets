@@ -7,3 +7,12 @@
 [submodule "StoryboardNavigations"]
 	path = StoryboardNavigations
 	url = https://github.com/carrington-manyuchi/Navigations.git
+[submodule "NavigationsWithCode"]
+	path = NavigationsWithCode
+	url = https://github.com/carrington-manyuchi/NavigationControllerWithCode.git
+[submodule "TabBarOneProgrammatic"]
+	path = TabBarOneProgrammatic
+	url = https://github.com/carrington-manyuchi/TabBar-Progr.git
+[submodule "TabBarTwoProgrammatic"]
+	path = TabBarTwoProgrammatic
+	url = https://github.com/carrington-manyuchi/TabBar.git
